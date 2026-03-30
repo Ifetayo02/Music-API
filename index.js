@@ -1,6 +1,10 @@
 const express=require('express');
 const app=express();
 const port=5400;
+const cors=require('cors'); 
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
 const music=[
     {
         id:1,
